@@ -1,0 +1,333 @@
+/*IMPORTS*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/* MOBILE FIRST */
+/* Smartphone*/
+/*VARIABLES*/
+@media (max-width: 480px) {
+  /*ANIDAMIENTO*/
+  body {
+    background-color: rgb(248, 4, 228);
+  }
+  body h1 {
+    font-size: 2rem;
+  }
+  body article {
+    background-color: white;
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 2px black;
+  }
+  body article article p {
+    text-align: justify;
+    margin: 10px;
+  }
+  body article img {
+    width: 50%;
+  }
+  body p {
+    padding: 10px;
+    font-size: 13px;
+    color: white;
+  }
+  body p aside p {
+    padding: 10px;
+  }
+  footer {
+    padding: 13px;
+    text-align: center;
+    background-color: rgb(16, 218, 233);
+    color: rgb(184, 4, 169);
+  }
+}
+/* Estilos GRIDS por AREAS */
+#grilla-areas {
+  display: grid;
+  grid-template-areas: "menu" "cabeza" "imagenes" "brazo" "parrafo" "pie";
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 20vh 1fr 1fr 20vh 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+/* FLEXs */
+.menuFlex {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: rgb(136, 12, 219);
+}
+
+.flexImagenes {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.lateralFlex {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: rgb(146, 5, 146);
+}
+
+/* Tablet */
+/*VARIABLES*/
+@media (min-width: 481px) and (max-width: 1023px) {
+  /*ANIDAMIENTO*/
+  body {
+    background-color: rgb(248, 4, 228);
+  }
+  body h1 {
+    font-size: 3rem;
+  }
+  body header {
+    height: 25vh;
+    background-color: rgb(103, 9, 139);
+  }
+  body span {
+    padding: 5px 10px;
+  }
+  /* Estilos GRIDS por AREAS */
+  #grilla-areas {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu " "imagenes imagenes " "parrafo brazo" "pie pie";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+  article {
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 2px black;
+  }
+  h3 {
+    margin: 7px;
+    text-transform: uppercase;
+  }
+  p {
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+  }
+  article img {
+    width: 70%;
+    text-align: center;
+  }
+  article p {
+    text-align: justify;
+    margin: 10px;
+  }
+  aside img {
+    width: 50%;
+  }
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(16, 218, 233);
+    color: rgb(248, 4, 228);
+    text-align: center;
+  }
+  /* FLEXs */
+  .menuFlex {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: rgb(8, 166, 214);
+    justify-content: space-evenly;
+  }
+  .flexImagenes {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .lateralFlex {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgb(146, 5, 146);
+  }
+}
+/* Desktop */
+/*VARIABLES*/
+@media (min-width: 1024px) {
+  /*ANIDAMIENTO*/
+  body {
+    background-color: rgb(248, 4, 228);
+  }
+  body h1 {
+    font-size: 3rem;
+  }
+  body article {
+    background-color: white;
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 2px black;
+    align-items: center;
+  }
+  body h3 {
+    margin: 7px;
+    text-transform: uppercase;
+  }
+  body p {
+    font-size: 20px;
+    color: white;
+  }
+  body aside {
+    height: 100%;
+  }
+  body article img {
+    width: 80%;
+  }
+  body aside p {
+    padding: 10px;
+    color: #d3d3d3;
+  }
+  body footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(16, 218, 233);
+    color: rgb(248, 4, 228);
+    text-align: center;
+  }
+  /* Estilos GRIDS por AREAS */
+  #grilla-areas {
+    display: grid;
+    grid-template-areas: "menu cabeza cabeza" "menu imagenes brazo" "menu parrafo brazo" "menu pie pie";
+    grid-template-columns: 15% auto 20%;
+    grid-template-rows: 35vh 1fr 25vh 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+  }
+  /* FLEXs */
+  .menuFlex {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .flexImagenes {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .lateralFlex {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgb(146, 5, 146);
+  }
+}
+/*VARIABLES*/
+/*ANIDAMIENTO*/
+body {
+  width: 100%;
+  height: 100vh;
+}
+body header {
+  background-image: url("https://th.bing.com/th/id/R.d10f021affc6d2053fb47157298c9533?rik=Z7FGDga07Wktww&pid=ImgRaw&r=0");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+body h1 {
+  background-color: rgb(86, 5, 141);
+  color: white;
+  text-shadow: black;
+  text-align: center;
+}
+body h2 {
+  background-color: rgb(86, 5, 141);
+  color: white;
+  text-shadow: black;
+  font-size: 28px;
+}
+body h3 {
+  background-color: rgb(86, 5, 141);
+  color: white;
+  text-shadow: black;
+  font-size: 20px;
+}
+body span {
+  background-color: rgb(16, 218, 233);
+  margin: 3px;
+  padding: 10px;
+}
+body span:hover {
+  border-left: solid 20px black;
+}
+
+.cursiva {
+  font-style: italic;
+}
+
+.interlineado {
+  line-height: 150%;
+}
+
+.margen {
+  margin: 100px;
+}
+
+.texto-animado {
+  animation-name: texto;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+  overflow: hidden;
+}
+
+.texto-animadoII {
+  animation-name: textoII;
+  animation-duration: 8s;
+  animation-iteration-count: 1;
+  overflow: hidden;
+}
+
+@keyframes texto {
+  from {
+    transform: translateX(1300px);
+    overflow: hidden;
+  }
+  to {
+    transform: translate(0);
+    overflow: hidden;
+  }
+}
+@keyframes textoII {
+  from {
+    transform: translateX(1000px);
+    overflow: hidden;
+  }
+  to {
+    transform: translate(0);
+    overflow: hidden;
+  }
+}
+/* Nombrar Areas */
+header {
+  grid-area: cabeza;
+}
+
+footer {
+  grid-area: pie;
+}
+
+#imagenes {
+  grid-area: imagenes;
+}
+
+#parrafo {
+  grid-area: parrafo;
+  background-color: rgb(16, 218, 233);
+}
+
+nav {
+  grid-area: menu;
+}
+
+aside {
+  grid-area: brazo;
+}
+
+/*# sourceMappingURL=destino.css.map */

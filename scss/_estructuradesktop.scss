@@ -1,0 +1,109 @@
+/* Desktop */
+/*VARIABLES*/ 
+ 
+
+$violeta: rgb(86, 5, 141);
+$violetaII: rgb(136, 12, 219);
+$violetaIII: rgb(146, 5, 146);
+$violetaIIII: rgb(103, 9, 139);
+$negro: black;
+$blanco: white;
+$casiblanco: #fff;
+$turquesa: rgb(16, 218, 233); 
+$celeste: rgb(8, 166, 214);
+$fucsia: rgb(248, 4, 228);
+$fucsiaII: rgb(184, 4, 169);
+
+@media (min-width: 1024px) {
+    
+    /*ANIDAMIENTO*/
+    
+    body {
+        background-color: $fucsia;
+
+        h1 {
+            font-size: 3rem;
+        }
+    
+        article {
+            background-color: $blanco;
+            border-radius: 4px;
+            margin: 5px;
+            text-align: center;
+            box-shadow: 2px 2px 2px $negro;
+            align-items: center;
+        }
+    
+        h3 {
+            margin: 7px;
+            text-transform: uppercase;
+        }
+    
+    
+        p {
+            font-size: 20px;
+            color: $blanco;
+        }
+    
+    
+        aside {
+            height: 100%;
+        }
+    
+        article img {
+            width: 80%;
+        }
+    
+        aside p {
+            padding: 10px;
+            color: #d3d3d3;
+        }
+    
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: $turquesa;
+            color: $fucsia;
+            text-align: center;
+        }
+    }
+
+  
+
+
+    /* Estilos GRIDS por AREAS */
+    #grilla-areas {
+        display: grid;
+        grid-template-areas:
+
+            "menu cabeza cabeza"
+            "menu imagenes brazo"
+            "menu parrafo brazo"
+            "menu pie pie"
+
+        ;
+        grid-template-columns: 15% auto 20%;
+        grid-template-rows: 35vh 1fr 25vh 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+    }
+
+    /* FLEXs */
+    .menuFlex {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+
+    .flexImagenes {
+        display: flex;
+        flex-flow: row nowrap;
+
+    }
+
+    .lateralFlex {
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: $violetaIII;
+    }
+}

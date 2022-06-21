@@ -1,0 +1,123 @@
+/* Tablet */
+
+/*VARIABLES*/ 
+ 
+
+$violeta: rgb(86, 5, 141);
+$violetaII: rgb(136, 12, 219);
+$violetaIII: rgb(146, 5, 146);
+$violetaIIII: rgb(103, 9, 139);
+$negro: black;
+$blanco: white;
+$casiblanco: #fff;
+$turquesa: rgb(16, 218, 233); 
+$celeste: rgb(8, 166, 214);
+$fucsia: rgb(248, 4, 228);
+$fucsiaII: rgb(184, 4, 169);
+
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    
+    /*ANIDAMIENTO*/ 
+    
+    body {
+        background-color: $fucsia;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        header {
+            height: 25vh;
+            background-color: $violetaIIII;
+        }
+
+        span {
+            padding: 5px 10px;
+        }
+
+    }
+
+
+    /* Estilos GRIDS por AREAS */
+    #grilla-areas {
+        display: grid;
+        grid-template-areas:
+
+            "cabeza cabeza"
+            "menu menu "
+            "imagenes imagenes "
+            "parrafo brazo"
+            "pie pie"
+
+        ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    article {
+        background-color: $casiblanco;
+        border-radius: 4px;
+        margin: 5px;
+        text-align: center;
+        box-shadow: 2px 2px 2px $negro;
+    }
+
+    h3 {
+        margin: 7px;
+        text-transform: uppercase;
+    }
+
+    p {
+        padding: 10px;
+        font-size: 20px;
+        color: $blanco;
+        text-align: justify;
+        
+    }
+
+    article img {
+        width: 70%;
+        text-align: center;
+    }
+
+    article p {
+        text-align: justify;
+        margin: 10px;
+    }
+
+
+    aside img {
+
+        width: 50%;
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+        background-color: $turquesa;
+        color: $fucsia;
+        text-align: center;
+    }
+
+    /* FLEXs */
+    .menuFlex {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: $celeste;
+        justify-content: space-evenly;
+    }
+
+    .flexImagenes {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .lateralFlex {
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: $violetaIII;
+    }
+}
